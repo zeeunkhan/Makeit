@@ -7,10 +7,10 @@
 	<script src="js\makeit.js" async></script>
 </head>
 <body>
+	<div class="header">
+		<a class="logo"><img src="images\Main\Makeit Logo.png" alt="Make It Logo"></a> 
+	  </div>
     <header>
-		<!-- ask how to make logo link to home -->
-        <a class="logo"><img src="images\Main\Makeit Logo.png" alt="Make It Logo"></a> 
-
     <main>
 		<nav>
 			<ul class="nav_ul">
@@ -21,10 +21,42 @@
 
 		</nav>
 	</header>
-<!-- <section>
-	<h2><p>Cut Calculator</p></h2>
-</section> -->
-
+	<h2>Cut Calculator</h2>
+	<div class = title >Enter Your Measurements</div>
+	<table border="4">
+	   <tr>
+		  <td colspan="3"><input type="text" id="result"/></td>
+		  <!-- clr() function will call clr to clear all value -->
+		  <td><input type="button" value="c" onclick="clr()"/> </td>
+	   </tr>
+	   <tr>
+		  <!-- create button and assign value to each button -->
+		  <!-- dis("1") will call function dis to display value -->
+		  <td><input type="button" value="1" onclick="dis('1')"/> </td>
+		  <td><input type="button" value="2" onclick="dis('2')"/> </td>
+		  <td><input type="button" value="3" onclick="dis('3')"/> </td>
+		  <td><input type="button" value="/" onclick="dis('/')"/> </td>
+	   </tr>
+	   <tr>
+		  <td><input type="button" value="4" onclick="dis('4')"/> </td>
+		  <td><input type="button" value="5" onclick="dis('5')"/> </td>
+		  <td><input type="button" value="6" onclick="dis('6')"/> </td>
+		  <td><input type="button" value="-" onclick="dis('-')"/> </td>
+	   </tr>
+	   <tr>
+		  <td><input type="button" value="7" onclick="dis('7')"/> </td>
+		  <td><input type="button" value="8" onclick="dis('8')"/> </td>
+		  <td><input type="button" value="9" onclick="dis('9')"/> </td>
+		  <td><input type="button" value="+" onclick="dis('+')"/> </td>
+	   </tr>
+	   <tr>
+		  <td><input type="button" value="." onclick="dis('.')"/> </td>
+		  <td><input type="button" value="0" onclick="dis('0')"/> </td>
+		  <!-- solve function call function solve to evaluate value -->
+		  <td><input type="button" value="=" onclick="solve()"/> </td>
+		  <td><input type="button" value="*" onclick="dis('*')"/> </td>
+	   </tr>
+	</table>
         <form id="project_plans" name="project_plans" action="projectplans.html" method="get">
 			<section id="Recommended Projects">
             	<h2>Recommended Projects</h2>
