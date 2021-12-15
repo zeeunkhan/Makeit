@@ -2,51 +2,80 @@
 <html>
   <head>
     <title>Make It</title>
-    <link type="text/css" rel="stylesheet" href="css\makeit.css" />
+    <meta name="viewpint" content="with=device-width,"initial-scale=1.0> 
+    <link type="text/css" rel="stylesheet" href="css\makeit.css">
+    <script src="https://kit.fontawesome.com/ecf42c437f.js" crossorigin="anonymous"></script>    
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="js\makeit.js"></script>
+</head>
     <body>
-      <div class="header">
-        <a class="logo"><img src="images\Main\Makeit Logo.png" alt="Make It Logo"></a> 
-        </div>
-      <header>
-      <nav>
-        <ul class="nav_ul">
-          <li><a href="index.html">HOME</a></li>
-          <!-- <nav_ul li><a href="projectplans.html">PROJECT PLANS</a></li> -->
-            <nav_ul li><a href="about.html">ABOUT</a></li>
-            <nav_ul li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+        <section class="header">
+          <nav>
+              <a href="index.html"><img src="images\Main\Makeit Logo.png" alt="Make It Logo"></a>
+          <div class="nav-links" id="navLinks">
+              <i class="fas fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="projectplans.html">PROJECT PLANS</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="requests.html">REQUESTS</a></li>
+              </ul>
+          </div>
+          <i class="fas fa-bars" onclick="showMenu()" ></i>
+          </nav>
     <h1>
-<p><b>PROJECT PLANS</b></p>
+      <b>PROJECT PLANS</b>
     </h1>
-      
-      <table style="width:100%">
-        <tr>
-          <th>photos</th>
-          <th>time</th>
-          <th>plans</th>
-        </tr>
-        <tr>
-          <td><a href="#"><img id="" src="Recommended Projects\p1.jpg" alt="Wall Cabinet"/></a></td>
-          <td>4.5hrs</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td><a href="#"><img id="" src="Recommended Projects\p2.jpg" alt="Lamp"/></a></td>
-          <td>2hrs</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-          <td><a href="#"><a href="#"><img id="" src="Recommended Projects\p3.jpg" alt="Table"/></a></td>
-          <td>1.5hrs</td>
-          <td>Mexico</td>
-        </tr>
-      </table>
+        <div class="wrapper" style="width:100%">
+          <div class="body">
+            <div class="card">
+              <table class="responsive-table">
+                <tbody>
+                  <tr>
+                    <td id=photos data-title="photos">add photo</td>
+                    <td id= projects data-title="Project">Simple Wood Shelf</td>
+                    <td id= actions data-title="actions">
+                      <ul class="actions">
+                        <li>
+                          <a href="pdfs\simple-wood-shelf.pdf" download>download</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <hr>
+                  <tr>
+                    <td data-title="photos"><img src="images/shoji-lamp.jpg"></td>
+                    <td data-title="Project">Shoji Lamp</td>
+                    <td data-title="actions">
+                      <ul class="actions">
+                        <li>
+                          <a href="pdfs\shoji-lamp.pdf" download><img src="images\download.png" 
+                            alt="download icon" width="50%" height="50%"></a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <hr>
+                  <tr>
+                    <td data-title="photos">add photo</td>
+                    <td data-title="Project">add project title and description</td>
+                    <td data-title="actions">
+                      <ul class="actions">
+                        <li>
+                          <a href="#">download</a>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       <!-- ADD RECOMMENDED SECTION (float right) -->
-
+      <section class="footer">
+        <p>designed by Zee Khan 2021<p>
+    </section>
     </body>
-  </head>
+  <script src="js\makeit.js"></script>
 </html>

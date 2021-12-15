@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Make It</title>
+    <meta name="viewpint" content="with=device-width,"initial-scale=1.0> 
+    <link type="text/css" rel="stylesheet" href="css\makeit.css">
+    <script src="https://kit.fontawesome.com/ecf42c437f.js" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+    <body>
+      <section class="header">
+        <nav>
+            <a href="index.html"><img src="images\Main\Makeit Logo.png" alt="Make It Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projectplans.html">PROJECT PLANS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="requests.html">REQUESTS</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()" ></i>
+        </nav>
+      <h1><b>CONTACT</b></h1>
+
+      <div class="container">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="John. Doe">
+    
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="john.d@yourdomain.com">
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write Here Your Comments, Questions or Requests" style="height:200px"></textarea>
+      
+          <button id="submit" onclick="myFunction()">Submit</button> 
+
+          <script>
+
+
+          </script>
+        </form>
+      </div>
+      <section class="footer">
+        <p>designed by Zee Khan 2021<p>
+    </section>  
+    </body>
+    <script src="js\makeit.js"></script>
+</html>

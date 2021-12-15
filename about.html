@@ -2,31 +2,57 @@
 <html>
   <head>
     <title>Make It</title>
-    <link type="text/css" rel="stylesheet" href="css\makeit.css" />
+    <meta name="viewpint" content="with=device-width,"initial-scale=1.0> 
+    <link type="text/css" rel="stylesheet" href="css\makeit.css">
+    <script src="https://kit.fontawesome.com/ecf42c437f.js" crossorigin="anonymous"></script>    
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="js\makeit.js"></script>
-    
+
     <body>
       
-      <div class="header">
-        <a class="logo"><img src="images\Main\Makeit Logo.png" alt="Make It Logo"></a> 
+      <section class="header">
+        <nav>
+            <a href="index.html"><img src="images\Main\Makeit Logo.png" alt="Make It Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projectplans.html">PROJECT PLANS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="requests.html">REQUESTS</a></li>
+            </ul>
         </div>
-    
-        <header>
-      <nav>
-        <ul class="nav_ul">
-            <li><a href="index.html">HOME</a></li>
-            <nav_ul li><a href="projectplans.html">PROJECT PLANS</a></li>
-              <!-- <nav_ul li><a href="about.html">ABOUT</a></li> -->
-              <nav_ul li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-      <h1><b>Hello hello!</b></h1>
+        <i class="fas fa-bars" onclick="showMenu()" ></i>
+        </nav>
 
-      <!-- about paragraph. (purpose of website) -->
-      </p>
+<section class="about">
+ <div class="row">
+  <div class="about-col">
 
+    <h1>About MakeIt</h1>
+    <h2>Hello hello!</h2>
+
+    <p> If you've got the audacity of a baby tiger, but the math skills of an amoeba 
+     then I'm sure there's been a time when you picked up a wood related project thinking "it seems easy enough".</p>
+   <p>Alas; after many hours, and much...much more money spent than what was anticipated; 
+     you're left with nothing but regret and horribly cut pieces of wood.</p>
+     <p>My amazing Cut Calculator takes away the pain of taking measurements to a tee. With this calculator, 
+       you can remain confident knowing it wasn't your mathematical skills holding you back.</p>
+       <p>So go ahead now and look at some new projects to pick up or try the cut calculator for your current project.</p>
+       
+       <a href="projectplans.html" class="about-btn">Explore Projects</a>
+       <a href="index.html"  class="about-btn">Calculator</a>
+
+   </div>
+  <div class="about-col">
+    <img src="images\about-ww.jpg" alt="people doing woodworking in shop">
+       </div>
+  
+</div>
+</section>
+<section class="footer">
+  <p>designed by Zee Khan 2021<p>
+</section>
     </body>
   </head>
+  <script src="js\makeit.js"></script>
 </html>

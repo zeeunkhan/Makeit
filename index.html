@@ -1,77 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Make It</title>
-    <link type="text/css" rel="stylesheet" href="css\makeit.css">
+    <meta name="viewpint" content="with=device-width," initial-scale="1.0" />
+    <link type="text/css" rel="stylesheet" href="css\makeit.css" />
+    <script
+      src="https://kit.fontawesome.com/ecf42c437f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js\makeit.js" async></script>
-</head>
-<body>
-
-	<div class="header">
-		<a class="logo"><img src="images\Main\Makeit Logo.png" alt="Make It Logo"></a> 
-	  </div>
-    <header>
-		
-    <main>
-		<nav>
-			<ul class="nav_ul">
-				<nav_ul li><a href="projectplans.html">PROJECT PLANS</a></li>
-				<nav_ul li><a href="about.html">ABOUT</a></li>
-				<nav_ul li><a href="contact.html">CONTACT</a></li>
-			</ul>
-
-		</nav>
-	</header>
-	<h2>Cut Calculator</h2>
-	<div class = title >Enter Your Measurements</div>
-	<table border="4">
-	   <tr>
-		  <td colspan="3"><input type="text" id="result"/></td>
-		  <!-- clr() function will call clr to clear all value -->
-		  <td><input type="button" value="c" onclick="clr()"/> </td>
-	   </tr>
-	   <tr>
-		  <!-- create button and assign value to each button -->
-		  <!-- dis("1") will call function dis to display value -->
-		  <td><input type="button" value="1" onclick="dis('1')"/> </td>
-		  <td><input type="button" value="2" onclick="dis('2')"/> </td>
-		  <td><input type="button" value="3" onclick="dis('3')"/> </td>
-		  <td><input type="button" value="/" onclick="dis('/')"/> </td>
-	   </tr>
-	   <tr>
-		  <td><input type="button" value="4" onclick="dis('4')"/> </td>
-		  <td><input type="button" value="5" onclick="dis('5')"/> </td>
-		  <td><input type="button" value="6" onclick="dis('6')"/> </td>
-		  <td><input type="button" value="-" onclick="dis('-')"/> </td>
-	   </tr>
-	   <tr>
-		  <td><input type="button" value="7" onclick="dis('7')"/> </td>
-		  <td><input type="button" value="8" onclick="dis('8')"/> </td>
-		  <td><input type="button" value="9" onclick="dis('9')"/> </td>
-		  <td><input type="button" value="+" onclick="dis('+')"/> </td>
-	   </tr>
-	   <tr>
-		  <td><input type="button" value="." onclick="dis('.')"/> </td>
-		  <td><input type="button" value="0" onclick="dis('0')"/> </td>
-		  <!-- solve function call function solve to evaluate value -->
-		  <td><input type="button" value="=" onclick="solve()"/> </td>
-		  <td><input type="button" value="*" onclick="dis('*')"/> </td>
-	   </tr>
-	</table>
-        <form id="project_plans" name="project_plans" action="projectplans.html" method="get">
-			<section id="Recommended Projects">
-            	<h2>Recommended Projects</h2>
-
-            	<!-- <p>think of subtitle</p> -->
-<!-- Add alternative image to each "recommended project" or change to slideshow -->
-            	<ul>
-            		<li><a href="#"><img id="" src="Recommended Projects\p1.jpg" alt="Wall Cabinet"/></a></li>
-            		<li><a href="#"><img id="" src="Recommended Projects\p2.jpg" alt="Lamp"/></a></li>
-            		<li><a href="#"><img id="" src="Recommended Projects\p3.jpg" alt="Table"/></a></li>
-            	</ul>
-            </section>
-
-    </main> 
-</body>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images\Main\Makeit Logo.png" alt="Make It Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="projectplans.html">PROJECT PLANS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="requests.html">REQUESTS</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Cut Calculator</h1>
+        <p>Enter Your Measurments To Calculate Your Accurate Cut Lengths.</p>
+      </div>
+    </section>
+    <section class="recommendations">
+      <h1>Try These Projects</h1>
+      <div class="row">
+        <div class="prog-col">
+          <img src="images\shoji-lamp.png" alt="shoji-lamp" />
+          <h2>Shoji Lamp</h2>
+        </div>
+        <div class="prog-col">
+          <img src="images\chairs.png" alt="pair of rustic chairs" />
+          <h2>Rustic Chair</h2>
+        </div>
+        <div class="prog-col">
+          <img src="images\shelf.png" alt="simple wood shelf on wall" />
+          <h2>Simple shelf</h2>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <p>designed by Zee Khan 2021</p>
+      <p></p>
+    </section>
+  </body>
+  <script src="js\makeit.js"></script>
 </html>

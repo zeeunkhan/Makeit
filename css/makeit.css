@@ -1,188 +1,204 @@
 * {
-  text-decoration: none;
-}
-body {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  background-size: cover;
-  background-blend-mode: lighten;
-  color: #000;
-  margin: 0 auto;
-  padding: 0 2em 1em;
-  box-sizing: border-box;
-}
-.header img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: black;
-}
-
-header {
-  padding: 60px;
-  text-align: right;
-  background: black;
-  color: black;
-  font-size: 15px;
-}
-.logo {
-  max-width: auto;
-  max-height: auto;
-  display: block;
-  position: absolute;
-}
-
-nav {
-  float: right;
-  text-align: right;
-  text-decoration-color: black;
-  color: grey solid;
-  list-style: none;
-  font-size: 140%;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  line-height: 100%;
+  margin: 0;
   padding: 0;
-}
-
-/* remove hyperlink features */
-.nav_ul {
-  list-style: none;
-  overflow: hidden;
-  background-color: white;
-  display: block;
-  color: black;
-  text-decoration: rgb(43, 46, 46);
-  text-align: right;
   text-decoration: none;
-  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-li {
-  color: rgb(43, 46, 46);
-  text-decoration-color: rgb(43, 46, 46);
-  height: 10em;
-  width: 10em;
+body{
+  min-height: 100%;
 }
-
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
+.header {
+  max-height: 110px;
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
-h2 {
-  font-size: 140%;
-  font-weight: 500, bold;
-  margin-top: 0;
-  margin-bottom: 0.2em;
-  color: rgb(53, 53, 61);
+/*start of nav css*/
+nav {
+  display: flex;
+  padding: auto;
+  justify-content: space-between;
+  align-items: center;
 }
-select {
-  width: 305px;
+nav img {
+  width: 120px;
 }
-h3 {
-  font-size: 140%;
-  font-weight: 500, bold;
-  margin-top: 0;
-  margin-bottom: 0.2em;
-  color: rgb(53, 53, 61);
+.nav-links {
+  flex: 1;
+  text-align: right;
 }
-select {
-  width: 305px;
-}
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 0;
-}
-ul li {
-  display: inline;
-  padding: 5px 0 5px 0;
-  list-style-image: none;
-  /* height: 10em;
-    width: 10em; */
-}
-img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-}
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-}
-
-/* table css*/
-button {
+.nav-links ul li {
+  list-style: none;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 15px;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
 }
-#table {
+.nav-links ul li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+.nav-links ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: gold;
   display: block;
-  margin-top: 20px;
+  margin: auto;
+  transition: 0.3s;
 }
-th, td {
-  border: 1px solid black;
-  padding: none;
-}
-/*end table css*/
 
-/*contact form css*/
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 4px;
+/*end of nav css*/
+.text-box {
+  width: 50%;
+  float: right;
+  background-color: grey;
+  color: black;
+  position: absolute;
+  top: 200%;
+  justify-content: right;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  transform: translate(0,-20%);
 }
-
-input[type="submit"] {
-  background-color: white;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
+ .text-box h1 {
+  font-size: 50px;
+  color: aliceblue;
+  size: 50px;
   background-color: grey;
 }
-
-.container {
-  border-radius: 5px;
-  background-color: rgb(190, 184, 184);
-  padding: 20px;
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: #c0b2a1;
 }
-/*end contact form css*/
-
-.title {
-  margin-bottom: 10px;
+nav .fas {
+  display: none;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: rgba(53, 4, 4, 0.829);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.8s;
+  }
+  nav .fas {
+    display: block;
+    color: gold;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+/*recommended projects*/
+.recommendations {
+  width: 80%;
+  margin:auto;
+  /* text-align: center; */
+  padding-top: 800px;
+}
+.prog-col{
+  flex-basis: 31%;
+  background: grey;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding:20px 12px;
+  box-sizing: border-box;
+}
+.prog-col h1{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+.prog-col h2{
+  color:black;
+  font-size: 20px;
+  font-weight:bold;
+  line-height: 30px;
+  padding: 10px;
   text-align: center;
-  width: 210px;
-  color: grey;
-  border: solid black 2px;
-}
 
-input[type="button"] {
+}
+.prog-col img{
+  width: 100%;
+}
+.row{
+  margin-top: 5%;
+  display:flex;
+  justify-content: space-between;
+  }
+
+/*about section*/
+.about {
+  width: 90%;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  background-color: #c0b2a11e;
+}
+.about-col h1 {
+  font-size: 30px;
+  font-weight: bold;
   background-color: grey;
-  color: black;
-  border: solid black 2px;
+  padding-top: 0%;
+}
+.about-col p {
+  color: rgb(46, 38, 27);
+  font-size: 25px;
+  line-height: 30px;
+  padding: 10px 0 20px;
+}
+.about-col{
+  flex-basis: 48%;
+  padding: 15px 2px;
+}
+.about-col img{
   width: 100%;
 }
+.about-btn{
+ text-decoration: none;
+ color: white;
+ padding: 12px 34px;
+ font-size: 16px; 
+ background: black;
+ position: relative;
+ cursor: pointer;
+ font-weight: bold;
+ float: right;
+}
+.about-btn:hover{
+background: rgb(107, 93, 16);
+transition: .3s;
+}
 
-input[type="text"] {
-  background-color: white;
-  border: solid black 2px;
-  width: 100%;
+/*footer css*/
+.footer{
+  position: absolute;
+   width: 100%;
+   text-align: center;
+}
+.footer p{
+  font-weight: lighter;
+  font-size: 10px;
 }

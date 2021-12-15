@@ -27,3 +27,12 @@ for (var i = 0; i < collection.length; i++) {
 function myFunction() {
   document.getElementById("submit").innerHTML = "Submitted. Thank You!";
 }
+
+//function for menu button toggles
+var navLinks = document.getElementById("navLinks");
+function showMenu() {
+  navLinks.style.right = "0";
+}
+function hideMenu() {
+  navLinks.style.right = "-200px";
+}
