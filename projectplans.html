@@ -15,9 +15,9 @@
               <i class="fas fa-times" onclick="hideMenu()"></i>
               <ul>
                   <li><a href="index.html">HOME</a></li>
-                  <li><a href="projectplans.html">PROJECT PLANS</a></li>
+                  <!-- <li><a href="projectplans.html">PROJECT PLANS</a></li> -->
                   <li><a href="about.html">ABOUT</a></li>
-                  <li><a href="requests.html">REQUESTS</a></li>
+                  <li><a href="submissions.html">SUBMISSIONS</a></li>
               </ul>
           </div>
           <i class="fas fa-bars" onclick="showMenu()" ></i>
@@ -25,57 +25,62 @@
     <h1>
       <b>PROJECT PLANS</b>
     </h1>
-        <div class="wrapper" style="width:100%">
+        <div class="wrapper">
           <div class="body">
             <div class="card">
               <table class="responsive-table">
-                <tbody>
+                <div>
+                  <div>
                   <tr>
-                    <td id=photos data-title="photos">add photo</td>
-                    <td id= projects data-title="Project">Simple Wood Shelf</td>
-                    <td id= actions data-title="actions">
+                    <td id=photos> <img src="images\shelf.png" alt="simple wood shelf on wall" style:flex-basis: 31%;
+    background: grey;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; /></td>
+                    <td id= projects>Simple Wood Shelf</td>
+                    <td id= actions>
                       <ul class="actions">
                         <li>
-                          <a href="pdfs\simple-wood-shelf.pdf" download>download</a>
+                          <a href="pdfs\simple-wood-shelf.pdf" download><i class="fas fa-download" style="color: black;"></i></a>
                         </li>
                       </ul>
                     </td>
                   </tr>
+                  </div>
                   <hr>
                   <tr>
-                    <td data-title="photos"><img src="images/shoji-lamp.jpg"></td>
+                    <td data-title="photos"><img src="images\shoji-lamp.png" alt="shoji-lamp" /></td>
                     <td data-title="Project">Shoji Lamp</td>
                     <td data-title="actions">
                       <ul class="actions">
                         <li>
-                          <a href="pdfs\shoji-lamp.pdf" download><img src="images\download.png" 
-                            alt="download icon" width="50%" height="50%"></a>
+                          <a href="pdfs\shoji-lamp.pdf" download><i class="fas fa-download" style="color: black;"></i></a>
                         </li>
                       </ul>
                     </td>
                   </tr>
                   <hr>
                   <tr>
-                    <td data-title="photos">add photo</td>
-                    <td data-title="Project">add project title and description</td>
+                    <td data-title="photos"><img src="images\chairs.png" alt="pair of rustic chairs"/></td>
+                    <td data-title="Project">Rustic Outdoor Lounger</td>
                     <td data-title="actions">
                       <ul class="actions">
                         <li>
-                          <a href="#">download</a>
+                          <a href="#" download><i class="fas fa-download" style="color: black;"></i></a>
                         </li>
                       </ul>
                     </td>
                   </tr>
                   <tr>
-                </tbody>
+                  </div>
               </table>
             </div>
           </div>
         </div>
-      <!-- ADD RECOMMENDED SECTION (float right) -->
-      <section class="footer">
-        <p>designed by Zee Khan 2021<p>
-    </section>
     </body>
+    <section class="footer">
+      <p>designed by Zee Khan 2021<p>
+  </section>
   <script src="js\makeit.js"></script>
 </html>

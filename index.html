@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js\calculator.js"></script>   
   </head>
   <body>
     <section class="header">
@@ -19,10 +20,10 @@
         <div class="nav-links" id="navLinks">
           <i class="fas fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="index.html">HOME</a></li>
+            <!-- <li><a href="index.html">HOME</a></li> -->
             <li><a href="projectplans.html">PROJECT PLANS</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="requests.html">REQUESTS</a></li>
+            <li><a href="submissions.html">SUBMISSIONS</a></li>
           </ul>
         </div>
         <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -31,21 +32,60 @@
         <h1>Cut Calculator</h1>
         <p>Enter Your Measurments To Calculate Your Accurate Cut Lengths.</p>
       </div>
+      <section class="calculator-table">
+      <table class="tg">
+        <colgroup>
+        <col style="width: 52px">
+        <col style="width: 191px">
+        <col style="width: 144px">
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="tg-num">#</th>
+            <th class="tg-num">Length</th>
+            <th class="tg-quantity">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-quantity">1</td>
+            <td class="tg-lengthnum">15"</td>
+            <td class="tg-quantitynum">1</td>
+          </tr>
+          <tr>
+            <td class="tg-quantity">2</td>
+            <td class="tg-lengthnum"></td>
+            <td class="tg-quantitynum"></td>
+          </tr>
+          <tr>
+            <td class="tg-btn"></td>
+            <td class="tg-btn"><a href=""  class="tg-btn">Calculate</td>
+            <td class="tg-btn"> <a href="" class="tg-btn">add</a></td>
+          </tr>
+        </tbody>
+        </table>
+      </section>
     </section>
     <section class="recommendations">
       <h1>Try These Projects</h1>
       <div class="row">
         <div class="prog-col">
-          <img src="images\shoji-lamp.png" alt="shoji-lamp" />
+          <a href="projectplans.html">
+          <img src="images\shoji-lamp.png" alt="shoji-lamp"/>
           <h2>Shoji Lamp</h2>
+        </a>
         </div>
         <div class="prog-col">
+          <a href="projectplans.html">
           <img src="images\chairs.png" alt="pair of rustic chairs" />
           <h2>Rustic Chair</h2>
+          </a>
         </div>
         <div class="prog-col">
+          <a href="projectplans.html">
           <img src="images\shelf.png" alt="simple wood shelf on wall" />
           <h2>Simple shelf</h2>
+          </a>
         </div>
       </div>
     </section>

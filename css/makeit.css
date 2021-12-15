@@ -5,7 +5,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-body{
+body {
   min-height: 100%;
 }
 .header {
@@ -59,22 +59,22 @@ nav img {
 .text-box {
   width: 50%;
   float: right;
-  background-color: grey;
+  /* background-color: grey; */
   color: black;
   position: absolute;
   top: 200%;
   justify-content: right;
   box-sizing: border-box;
-  transform: translate(0,-20%);
+  transform: translate(0, -20%);
 }
- .text-box h1 {
+.text-box h1 {
   font-size: 50px;
   color: aliceblue;
   size: 50px;
   background-color: grey;
 }
 .text-box p {
-  margin: 10px 0 40px;
+  /* margin: 10px 0 40px; */
   font-size: 20px;
   color: aliceblue;
   background-color: #c0b2a1;
@@ -111,43 +111,115 @@ nav .fas {
     padding: 30px;
   }
 }
+/*cut calculator css*/
+.calculator-table{
+padding-top: 200px;
+}
+.tg {
+  border-collapse: collapse;
+  border-color: #93a1a1;
+  border-spacing: 0;
+  border-style: solid;
+  border-width: 1px;
+}
+.tg td {
+  background-color: #fdf6e3;
+  border-color: #93a1a1;
+  border-style: solid;
+  border-width: 0px;
+  color: #002b36;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  background-color: #657b83;
+  border-color: #93a1a1;
+  border-style: solid;
+  border-width: 0px;
+  color: #fdf6e3;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg .tg-num {
+  border-color: inherit;
+  font-size: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-quantity {
+  border-color: inherit;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-lengthnum {
+  background-color: #efefef;
+  border-color: #000000;
+  font-size: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+.tg-btn {
+  text-decoration: none;
+  color: white;
+  padding: 12px 34px;
+  font-size: 16px;
+  background: black;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
 /*recommended projects*/
 .recommendations {
   width: 80%;
-  margin:auto;
+  margin: auto;
   /* text-align: center; */
-  padding-top: 800px;
+  padding-top: 500px;
+  float:left;
 }
-.prog-col{
+.recommendations h1{
+  background-color: black;
+  color:honeydew;
+}
+.prog-col {
   flex-basis: 31%;
   background: grey;
   border-radius: 10px;
   margin-bottom: 5%;
-  padding:20px 12px;
+  padding: 20px 12px;
   box-sizing: border-box;
 }
-.prog-col h1{
+.prog-col h1 {
   font-size: 25px;
   font-weight: bold;
   text-align: left;
 }
-.prog-col h2{
-  color:black;
+.prog-col h2 {
+  color: black;
   font-size: 20px;
-  font-weight:bold;
+  font-weight: bold;
   line-height: 30px;
   padding: 10px;
   text-align: center;
-
 }
-.prog-col img{
+.prog-col img {
   width: 100%;
 }
-.row{
+.row {
   margin-top: 5%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  }
+}
 
 /*about section*/
 .about {
@@ -169,36 +241,170 @@ nav .fas {
   line-height: 30px;
   padding: 10px 0 20px;
 }
-.about-col{
+.about-col {
   flex-basis: 48%;
   padding: 15px 2px;
 }
-.about-col img{
+.about-col img {
   width: 100%;
 }
-.about-btn{
- text-decoration: none;
- color: white;
- padding: 12px 34px;
- font-size: 16px; 
- background: black;
- position: relative;
- cursor: pointer;
- font-weight: bold;
- float: right;
+.about-btn {
+  text-decoration: none;
+  color: white;
+  padding: 12px 34px;
+  font-size: 16px;
+  background: black;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
 }
-.about-btn:hover{
-background: rgb(107, 93, 16);
-transition: .3s;
+.about-btn:hover {
+  background: rgb(107, 93, 16);
+  transition: 0.3s;
 }
 
 /*footer css*/
-.footer{
+.footer {
   position: absolute;
-   width: 100%;
-   text-align: center;
+  width: 100%;
+  text-align: center;
 }
-.footer p{
+.footer p {
   font-weight: lighter;
   font-size: 10px;
 }
+
+/* table css*/
+button {
+  display: inline-block;
+  padding: 10px 20px;
+}
+table {
+  border-collapse: collapse;
+}
+
+table thead tr th {
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+table tbody tr {
+  border-bottom: 1px solid grey;
+}
+
+table tbody tr:nth-of-type(2n) {
+  background-color: lightgrey;
+}
+
+table tbody tr:hover {
+  background-color: yellow;
+}
+
+table tbody tr td {
+  padding: 0.4em 1em;
+  text-align: left;
+}
+
+table tbody tr td.numeric {
+  text-align: right;
+}
+
+table tbody tr td ul.actions li {
+  list-style: none;
+  display: inline;
+}
+.li fas {
+  size: 50px;
+  color: gold;
+}
+@media screen and (max-width: 60px) {
+  table {
+    width: 100%;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tbody tr {
+    box-shadow: 0 0 0.5em #666666;
+    border: none;
+
+    display: block;
+
+    margin: 1em;
+  }
+
+  table tbody tr td {
+    padding: 0.4em 1em;
+    text-align: right;
+
+    display: block;
+
+    width: block;
+  }
+  table tbody tr td .photos img{
+    flex-basis: 31%;
+    background: grey;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+  }
+
+  table tbody tr td[data-label="#"] {
+    display: none;
+  }
+
+  table tbody tr td[data-label]:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  table tbody tr td.numeric {
+    text-align: left;
+  }
+}
+
+/*end table css*/
+
+/*contact form css*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding-right: 70%;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+  /* margin-top: 6px;
+  margin-bottom: 16px; */
+  display: table;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: grey;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(190, 184, 184);
+  padding: 20px;
+}
+/*end contact form css*/
+
